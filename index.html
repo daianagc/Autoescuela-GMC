@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAGINA WEB</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+     <h2 id="logo">GMC</h2>
+     <input type="checkbox" id="check">
+     <label for="check" class="mostrar-menu">
+        &#8801
+     </label>
+
+  <nav class="menu">
+    <a href="#sobrenosotros">SOBRE NOSOTROS</a>
+    <a href="#clases">CLASES</a>
+    <a href="#contacto">CONTACTO</a>
+    <label for="check" class="esconder-menu">
+        &#215
+    </label>
+  </nav>
+
+    </header>
+
+   
+    
+
+    <section class="hero__section">
+      <div class="hero__section-text">
+        <h1>AUTOESCUELA <span>GMC</span></h1>
+      </div>
+      <div class="hero__section-more">
+        <p>VER MÁS</p>
+      </div>
+    </section>
+
+    <section class="about-section" id="sobrenosotros">
+      <div class="container">
+        <h2 class="section-title blueTitle">
+          <span>Sobre</span>
+          nosotros
+        </h2>
+        <p>
+          Somos una empresa familiar dedicada a la enseñanza. Contamos con clases personalizadas y adaptadas
+          a tus necesidades. Saca tu registro AHORA !
+        </p>
+      </div>
+    </section>
+
+    <section class="beneficios-section" id="clases">
+      <div class="container">
+        <h2 class="section-title blueTitle"><span>Clases</span></h2>
+
+        <div class="beneficios__cardContainer">
+          <article class="beneficios__car-grid">
+            <div class="beneficios__card-img">
+              <img src="./img/dispngegg (2).png" alt="" />
+            </div>
+            <div class="beneficios__card-text">
+              <h3>TEÓRICAS</h3>
+            </div>
+          </article>
+
+          <article class="beneficios__car-grid">
+            <div class="beneficios__card-img">
+              <img src="./img/stoppngegg.png" alt="" />
+            </div>
+            <div class="beneficios__card-text">
+              <h3>PRACTICAS</h3>
+            </div>
+          </article>
+
+          <article class="beneficios__car-grid">
+            <div class="beneficios__card-img">
+              <img src="./img/cienpngegg (3).png" alt="" />
+            </div>
+            <div class="beneficios__card-text">
+              <h3>AVANZADAS</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+      <!-- LOGIN -->
+      <div class="container">
+        <div class="form sign-up-container">
+            <h1>REGISTRARSE</h1>
+            <form class="formulario">
+                <input type="text" placeholder="Nombre" name="nombre" id="name">
+                <input type="email" placeholder="Email" name="email" id="email">
+                <input type="password" placeholder="Contraseña" name="password" id="password">
+                <a class="ok-account">¿Ya tienes una cuenta?</a>
+                <input type="submit" value="Registrarse">
+            </form>
+        </div>
+
+        <div class="form sign-in-container">
+            <h1>Login</h1>
+            <form class="formulario2">
+                <input type="email" placeholder="Email" id="email2">
+                <input type="password" placeholder="Contraseña" id="password2">
+                <a class="no-account">¿Aun no tienes cuenta?</a>
+                <input type="submit" value="Iniciar Sesión">
+            </form>
+        </div>
+    </div>
+
+    <div class="contact__formContainer-img">
+      <img src="./img/licencpngegg (3).png" alt="" />
+    </div>
+    
+          
+
+    </section>
+  </body>
+  <footer>
+    <div class="container-footer">
+      <p>&copy; ACADEMIA DE MANEJO GMC 2022</p>
+    </div>
+  </footer>
+</html>

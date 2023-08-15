@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,800;1,700;1,800&family=Roboto:wght@500&display=swap');
+
+:root {
+    --padding-x: 100px;
+    --font-family: 'Montserrat', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    height: 100px;
+    background-color: #004c8b;
+    color: #fafafa;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ 
+ h2 {
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      color: #fafafa;
+      font-size: 4rem;
+      font-weight: 480;
+ }
+ 
+ .menu a{
+      color: #fafafa;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      margin: 2px 5px;
+      padding: 2px 2px;
+      transition: 0.4s;
+      border: 1px solid transparent;
+ }
+
+.menu a:hover{
+    border-bottom: 1px solid white;
+}
+
+ 
+ .mostrar-menu,.esconder-menu{
+      font-size: 40px;
+      cursor: pointer;
+      display: none; /*quita todos los checkbox */
+      transition: 0.4s;
+      text-decoration: none;
+ 
+ }
+ 
+ .mostrar-menu{
+      order:1;  /*le da el orden primero a mostrar menu*/
+      text-decoration: none;
+ 
+ }
+ 
+ .menu a:hover, .mostrar-menu:hover, .esconder-menu:hover{
+      color: #fafafa;
+      text-decoration:none;
+    
+    
+
+ }
+ 
+ #check{
+      display: none; /*quita todos los checkbox */
+ }
+
+
+
+/* *********************************************************** */
+
+.hero__section {
+height: calc(100vh - 80px);
+background-color: pink;
+background-image: url(./img/WhatsApp\ Image\ 2023-05-23\ at\ 13.57.29\ -\ copia.jpeg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position:center ;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+background-attachment: fixed;
+}
+
+.hero__section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(190, 190, 219);
+    opacity: 0.50;
+    mix-blend-mode: darken;
+  
+}
+
+.hero__section * {
+   z-index: 1 ; 
+   position: relative;
+}
+
+.hero__section-text h1 {
+   font-family: var(--font-family);
+   font-size: 80px;
+   text-transform: uppercase;
+   text-align: center;
+   font-weight:400;
+   color: #fafafa;
+   line-height: 1;
+}
+
+.hero__section-text h1 span {
+
+    display: block;
+    font-weight: 550;
+
+}
+
+.hero__section-more {
+    position: absolute;
+    bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35;
+}
+
+.hero__section-more p {
+    cursor: pointer;
+    font-family: var(--font-family);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    color: #fafafa;
+    border: none;
+    
+    
+}
+
+
+
+
+.about-section {
+    padding: 100px var(--padding-x);
+    background-color: #fafafa;
+
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: var(--font-family);
+    font-size: 60px;
+    font-weight: 250;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.blueTitle {
+    color: black;
+
+}
+
+.whiteTitle {
+    color: #fafafa;
+}
+
+.section-title span {
+    font-weight: 700;
+    
+}
+
+.about-section p {
+    font-family: var(--font-family);
+    font-size: 35px;
+    color: black;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.beneficios-section {
+    padding: 100px var(--padding-x);
+    background-image: url(./img/pexels-jeshootscom-451590.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.beneficios-section::before {
+    content: "" ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+    opacity: 0.4;
+}
+
+.beneficios-section * {
+    position: relative;
+    z-index: 1;
+}
+
+.beneficios__cardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 275px));
+    gap: 10%;
+    justify-content: center;
+    margin: 80px 0;
+    
+}
+
+.beneficios__car-grid {
+    cursor: pointer;
+    width: 100%;
+    background-color: #fafafa;
+    border-radius: 30px;
+    grid-auto-rows: 200px auto;
+    padding: 35px;
+    gap: 15px;
+    box-shadow: 7px 5px 5px black;
+}
+
+.beneficios__card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    
+}
+
+.beneficios__card-img img {
+    width: 70%;
+    height: 100%;
+    max-width: 170px;
+    max-width: 175%;
+}
+
+.beneficios__card-text h3 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+
+/* ***********************CONTACT************************************ */
+
+.contact-section {
+    background-color: #004c8b;
+    padding: 100px var(--padding-x);
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 50px;
+
+}
+
+
+#letritas .row h2:nth-child(1){
+	margin-bottom: 10px;
+}
+
+.form {
+    text-align: center;
+    width: 350px;
+    padding: 1rem;
+    background-color: rgba(199, 199, 195, .427);
+}
+
+.sign-in-container {
+    display: none;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.form input {
+    display: block;
+    width: 100%;
+    padding: .5rem;
+    margin: auto;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.form input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+    background-color: rgb(32, 69, 181);
+    border: none;
+    color: #fff;
+}
+
+.form a {
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    width: 150px;
+    font-size: .7rem;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.contact__formContainer-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__formContainer-img img {
+    width: 100%;
+    max-width: 470px;
+    object-fit: contain;
+}
+
+
+
+****************************************************************************
+
+footer{
+    background-color: #fafafa;
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--font-family);
+}
+
+footer .container-footer{
+ height: 90px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.menu__mobile {
+    display: none;
+}
+
+/* *********************************************************** */
+
+@media screen and (max-width: 1235px) {
+    :root {
+        --padding-x: 50px;
+    }
+   
+    .beneficios__cardContainer {
+        gap: 3%;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+ .menu__mobile {
+    display: block;
+ }
+
+ .hero__section-text h1 {
+    font-size: 4em;
+ }
+
+ .contact__formContainer {
+    grid-template-columns: 1fr;
+ }
+
+  /* HEADER */
+  .mostrar-menu, .esconder-menu {
+    display: block;
+}
+
+
+
+.menu{
+    position: fixed;
+    width: 100%;
+    height: 68%;
+    background: #004c8b;
+    right: -100%; 
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 100;
+    transition: 0.8s;
+    
+    
+    
+}
+
+
+.menu a{
+    width: 50%;
+    color: #fafafa;
+    display: flex;
+    
+    padding: 16px;
+    font-size: 1em;
+    text-transform: none;
+    transition: 0.3s;  
+    
+
+   
+}
+
+.esconder-menu{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    text-decoration: none;
+}
+
+#check:checked ~ .menu{
+    right: 0;
+}
+
+.menu a:hover{
+    text-decoration: none;
+    
+}
+
+.mostrar-menu:hover{
+  text-decoration: none;
+
+
+}
+
+}
+
+@media screen and (max-width: 600px) { 
+
+.whiteTitle {
+    font-size: 35px;
+}
+
+}
